@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug extract_metadata (uv)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/services/extractor/src/extract_metadata.py",
+      "args": ["--input", "data"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
