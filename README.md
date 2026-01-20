@@ -10,7 +10,7 @@ Minimal steps to extract DOCX core metadata into Postgres.
 
 ## Start Postgres
 
-From repo root (this project already has `pyproject.toml`/`uv.lock`, so `uv init` is not required):
+From repo root (`uv init` is required beforehand):
 
 ```bash
 docker compose -f infra/docker-compose.yaml up -d
@@ -21,7 +21,7 @@ docker compose -f infra/docker-compose.yaml up -d
 Create a `.env` file at repo root:
 
 ```bash
-DATABASE_URL=postgresql://mdx:mdx_password@localhost:5432/mdextractor
+DATABASE_URL=postgresql://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME
 ```
 
 ## Install Python deps (uv)
