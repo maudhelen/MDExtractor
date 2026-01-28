@@ -2,3 +2,4 @@
 .DS_Store
 uv.lock
 services/api/app/__pycache__/main.cpython-313.pyc
+services/api/app/data/*
