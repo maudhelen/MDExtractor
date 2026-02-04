@@ -10,7 +10,7 @@ Minimal steps to extract DOCX core metadata into Postgres.
 
 ## Start Postgres
 
-From repo root (`uv init` is required beforehand):
+From repo root:
 
 ```bash
 docker compose -f infra/docker-compose.yaml up -d
@@ -29,9 +29,24 @@ DATABASE_URL=postgresql://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME
 From repo root:
 
 ```bash
-cd services/extractor
 uv venv
 uv sync
+```
+
+## Run the API
+
+From repo root:
+
+```bash
+fastapi dev main.py
+```
+
+## Run the frontend (Streamlit)
+
+From repo root:
+
+```bash
+uv run streamlit run services/frontend/app.py
 ```
 
 ## Run extraction
